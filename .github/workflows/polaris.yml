@@ -30,7 +30,7 @@ jobs:
           polaris_fixpr_filter_severities: "CRITICAL,HIGH"
 
             # GitHub Token for creating PRs
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN1 }}
 
             # Diagnostics
           include_diagnostics: true
