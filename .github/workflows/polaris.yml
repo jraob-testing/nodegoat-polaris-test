@@ -21,9 +21,7 @@ jobs:
           polaris_project_name: "nodegoat-polaris-test"
           polaris_assessment_types: "SCA"
 
-          bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/3.9.0rc1/bridge-cli-bundle-3.9.0rc1-macos_arm.zip"
-
-
+          bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/3.9.0rc1/bridge-cli-bundle-3.9.0rc1-macosx.zip"
             # Polaris Fix PR - YOUR NEW FEATURE
           polaris_fixpr_enabled: true
           polaris_fixpr_maxCount: 5
