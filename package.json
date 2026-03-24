@@ -26,7 +26,7 @@
     "commons-compress": "1.25.0",
     "apache-tomcat": "9.0.50",
     "netty": "4.1.100",
-    "mcp-remote": "0.1.15",
+    "mcp-remote": "0.1.38",
     "anthropic-git-mcp-server": "2025.12.17",
     "nvidia-triton-inference-server": "25.06"
   },
