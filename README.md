@@ -42,6 +42,8 @@ The database comes pre-populated with these user accounts created as part of the
 4) Install node packages:
    ```
    npm install
+
+   
    ```
 
 5) Set up MongoDB. You can either install MongoDB locally or create a remote instance:
