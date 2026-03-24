@@ -39,6 +39,8 @@ The database comes pre-populated with these user accounts created as part of the
    cd NodeGoat
    ```
 
+   
+
 4) Install node packages:
    ```
    npm install
@@ -47,7 +49,7 @@ The database comes pre-populated with these user accounts created as part of the
    ```
 
 
-   
+
 
 5) Set up MongoDB. You can either install MongoDB locally or create a remote instance:
 
