@@ -21,14 +21,7 @@
     "serve-favicon": "^2.3.0",
     "swig": "^1.4.2",
     "underscore": "^1.8.3",
-    "log4j-core": "2.16.0",
-    "jackson-databind": "2.9.8",
-    "commons-compress": "1.25.0",
-    "apache-tomcat": "9.0.50",
-    "netty": "4.1.100",
-    "mcp-remote": "0.1.15",
-    "anthropic-git-mcp-server": "2025.12.17",
-    "nvidia-triton-inference-server": "25.06"
+    "mcp-remote": "0.1.15"
   },
   "comments": {
     "//": "a9 insecure components"

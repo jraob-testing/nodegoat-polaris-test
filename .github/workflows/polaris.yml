@@ -36,6 +36,7 @@ jobs:
           github_token: ${{ secrets.TOKEN1 }}
           github_owner_name: "jraob-testing"
           github_repository_name: "nodegoat-polaris-test"
+          github_repository_branch_name: "main"
 
             # Diagnostics
           include_diagnostics: true
