@@ -17,8 +17,8 @@ jobs:
             # Polaris Configuration
           polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
-          polaris_application_name: "nodegoat-test"
-          polaris_project_name: "nodegoat-test-project"
+          polaris_application_name: "nodegoat"
+          polaris_project_name: "nodegoat"
           polaris_assessment_types: "SAST,SCA"
 
           bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/4.1.0rc3/bridge-cli-bundle-4.1.0rc3-macosx.zip"
@@ -34,9 +34,6 @@ jobs:
 
             # GitHub Configuration
           github_token: ${{ secrets.TOKEN1 }}
-          github_owner_name: "jraob-testing"
-          github_repository_name: "nodegoat-polaris-test"
-          github_repository_branch_name: "main"
 
             # Diagnostics
           include_diagnostics: true
