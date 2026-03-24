@@ -19,15 +19,17 @@ jobs:
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_application_name: "nodegoat-test"
           polaris_project_name: "nodegoat-polaris-test"
-          polaris_assessment_types: "SCA"
+          polaris_assessment_types: "SAST,SCA"
+          polaris_waitForScan: true
 
           bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/4.1.0rc3/bridge-cli-bundle-4.1.0rc3-macosx.zip"
-# Polaris Fix PR - DISABLED (No Fix PRs will be created)
-          polaris_fixpr_enabled: false
-          # polaris_fixpr_maxCount: 5
-          # polaris_fixpr_useUpgradeGuidance: "SHORT_TERM,LONG_TERM"
-          # polaris_fixpr_filter_by: "SEVERITIES"
-          # polaris_fixpr_filter_severities: "CRITICAL,HIGH"
+
+          # Polaris Fix PR Configuration
+          polaris_fixpr_enabled: true
+          polaris_fixpr_maxCount: 5
+          polaris_fixpr_useUpgradeGuidance: "SHORT_TERM,LONG_TERM"
+          polaris_fixpr_filter_by: "SEVERITIES"
+          polaris_fixpr_filter_severities: "CRITICAL,HIGH"
 
             # GitHub Token for creating PRs
           
