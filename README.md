@@ -31,6 +31,9 @@ The database comes pre-populated with these user accounts created as part of the
 
 2) Clone the github repository:
    ```
+
+
+   
    git clone https://github.com/OWASP/NodeGoat.git
    ```
 
@@ -39,7 +42,7 @@ The database comes pre-populated with these user accounts created as part of the
    cd NodeGoat
    ```
 
-   
+
 
 4) Install node packages:
    ```
@@ -47,6 +50,8 @@ The database comes pre-populated with these user accounts created as part of the
 
 
    ```
+
+
 
 
 
