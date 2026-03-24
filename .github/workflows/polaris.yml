@@ -32,8 +32,9 @@ jobs:
           polaris_test_sast_location: "Remote"
           polaris_test_sca_location: "Remote"
 
-            # GitHub Token for creating PRs
+            # GitHub Configuration
           github_token: ${{ secrets.TOKEN1 }}
+          github_repository: ${{ github.repository }}
 
             # Diagnostics
           include_diagnostics: true
