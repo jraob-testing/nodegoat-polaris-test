@@ -18,7 +18,7 @@ jobs:
           polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_application_name: "bdss-fixpr-test"
-          # polaris_project_name: "nodegoat-polaris-test"
+          polaris_project_name: "bdss-fixpr-test"
           polaris_assessment_types: "SAST,SCA"
           polaris_waitForScan: true
 
@@ -35,9 +35,12 @@ jobs:
           polaris_fixpr_filter_by: "SEVERITIES"
           polaris_fixpr_filter_severities: "CRITICAL"
 
-            # GitHub Token for creating PRs
-          
+            # GitHub Configuration
           github_token: ${{ secrets.TOKEN1 }}
+          # github_host_url: "https://github.com"
+          # github_repository_owner: "jraob-testing"
+          # github_repository_name: "nodegoat-polaris-test"
+          # github_repository_branch: "main"
 
             # Diagnostics
           include_diagnostics: true
