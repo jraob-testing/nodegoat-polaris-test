@@ -33,7 +33,7 @@ jobs:
           polaris_fixpr_maxCount: 5
           polaris_fixpr_useUpgradeGuidance: "SHORT_TERM,LONG_TERM"
           polaris_fixpr_filter_by: "SEVERITIES"
-          polaris_fixpr_filter_severities: "Critical"
+          polaris_fixpr_filter_severities: "blocker"
 
             # GitHub Configuration
           github_token: ${{ secrets.TOKEN1 }}
