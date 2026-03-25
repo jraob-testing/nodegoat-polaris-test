@@ -23,7 +23,7 @@ jobs:
           polaris_waitForScan: true
 
           # Test Locations
-          polaris_test_sast_location: "Local"
+          polaris_test_sast_location: "Remote"
           polaris_test_sca_location: "Remote"
 
           bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/4.1.0rc3/bridge-cli-bundle-4.1.0rc3-macosx.zip"
@@ -33,7 +33,7 @@ jobs:
           polaris_fixpr_maxCount: 5
           polaris_fixpr_useUpgradeGuidance: "SHORT_TERM,LONG_TERM"
           polaris_fixpr_filter_by: "SEVERITIES"
-          polaris_fixpr_filter_severities: "blocker"
+          polaris_fixpr_filter_severities: "CRITICAL"
 
             # GitHub Configuration
           github_token: ${{ secrets.TOKEN1 }}
