@@ -24,7 +24,11 @@
     "tar": "2.2.1",
     "ramda": "0.24.1",
     "cryptiles": "0.2.2",
-    "is-my-json-valid": "2.19.0"
+    "is-my-json-valid": "2.19.0",
+    "lodash": "4.17.15",
+    "minimist": "1.2.0",
+    "axios": "0.18.0",
+    "jquery": "2.2.4"
   },
   "comments": {
     "//": "a9 insecure components"
