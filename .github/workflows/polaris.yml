@@ -1,7 +1,7 @@
 name: Polaris FixPR Test
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, teat-branch ]
   workflow_dispatch:
 
 jobs:
