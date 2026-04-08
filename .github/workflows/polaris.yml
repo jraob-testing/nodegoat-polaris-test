@@ -12,40 +12,30 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Polaris Scan with FixPR
-        uses: blackduck-inc/black-duck-security-scan@SIGINT-4621
+        uses: blackduck-inc/black-duck-security-scan@main
         with:
             # Polaris Configuration
           polaris_server_url: ${{ vars.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_application_name: "bdss-fixpr-test"
           polaris_project_name: "bdss-fixpr-test"
-          polaris_assessment_types: "SAST,SCA"
+          polaris_assessment_types: "SCA"
           polaris_waitForScan: true
           
-          
-          # # Test Locations
-          # polaris_test_sast_location: "Hybrid"
-
-
-
-          
-          # polaris_test_sca_location: "Hybrid"
 
           bridgecli_download_url: "https://artifactory.tools.duckutil.net/artifactory/clops-local/integrations/bridge/binaries/bridge-cli-bundle/4.1.0rc5/bridge-cli-bundle-4.1.0rc5-macosx.zip"
 
           # Polaris Fix PR Configuration
           polaris_fixpr_enabled: true
           polaris_fixpr_maxCount: 3
+          polaris_fixpr_useUpgradeGuidance: "LONG_TERM"
           # polaris_fixpr_useUpgradeGuidance: "SHORT_TERM,LONG_TERM"
-                                                                                                                             
           # polaris_fixpr_filter_severities: "BLOCKER"
+          polaris_fixpr_filter_severities: "Medium"
 
             # GitHub Configuration
           github_token: ${{ secrets.TOKEN3 }}
-          # github_host_url: "https://github.com"
-          # github_repository_owner: "jraob-testing"
-          # github_repository_name: "nodegoat-polaris-test"
-          # github_repository_branch: "main"
+          
 
             # Diagnostics
           include_diagnostics: true
