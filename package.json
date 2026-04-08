@@ -27,7 +27,7 @@
     "is-my-json-valid": "2.19.0",
     "lodash": "4.17.15",
     "minimist": "1.2.0",
-    "axios": "0.18.0",
+    "axios": "1.14.0",
     "jquery": "2.2.4"
   },
   "comments": {
